@@ -65,7 +65,7 @@ The script will:
 ```
 blog-funfacts-generator/
 ├── blog.py                 # Main Python script
-├── blog.html              # Generated HTML output
+├── index.html              # Generated HTML output
 ├── blog_background.jpeg   # Background image for the blog
 ├── .env                   # Environment variables (not in repo)
 ├── .gitignore             # Git ignore file
