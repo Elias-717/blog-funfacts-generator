@@ -1,0 +1,99 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>good morning</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url('blog_background.jpeg') no-repeat center center fixed;
+                background-size: cover;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .hero-card {
+                background: rgba(0,0,0,0.7);
+                backdrop-filter: blur(12px);
+                border-radius: 25px;
+                padding: 60px 40px;
+                max-width: 1000px;
+                width: 90%;
+                box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+                position: relative;
+                overflow: hidden;
+                animation: fadeIn 1s ease forwards;
+            }
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 700;
+                margin-bottom: 40px;
+                text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
+            }
+
+            p {
+                font-size: 1.8rem;
+                line-height: 1.8;
+                text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+            }
+
+            /* Floating decorative shapes */
+            .shape {
+                position: absolute;
+                border-radius: 50%;
+                opacity: 0.2;
+                animation: float 12s ease-in-out infinite;
+            }
+            .shape1 { width: 120px; height: 120px; background: #ff5722; top: -60px; left: -60px; }
+            .shape2 { width: 150px; height: 150px; background: #00bcd4; bottom: -80px; right: -80px; }
+            .shape3 { width: 80px; height: 80px; background: #ffeb3b; top: 25%; right: -40px; }
+
+            @keyframes float {
+                0%, 100% { transform: translateY(0) translateX(0); }
+                50% { transform: translateY(-20px) translateX(20px); }
+            }
+
+            @keyframes fadeIn {
+                0% { opacity: 0; transform: translateY(20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+
+            @media (max-width: 768px) {
+                h1 { font-size: 3rem; }
+                p { font-size: 1.2rem; }
+                .hero-card { padding: 40px 20px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero-card">
+            <h1>good morning</h1>
+            <p>Rise and shine! Or, you know, just rise. "Good morning" is often a polite suggestion, not a statement of fact, especially before your first cup.
+
+Here are some delightful truths about dawn:
+
+*   That "beautiful sunrise"? It's just the universe mocking your desperate need for more sleep, a daily reminder that the darkness didn't win... yet.
+*   Your beloved snooze button isn't about rest; it’s a tiny, desperate rebellion against the crushing inevitability of adulting.
+*   That first coffee isn't a beverage. It's a pharmacological intervention, a vital life-support system preventing you from becoming a highly articulate, perpetually grumpy zombie.
+*   Morning people? They’re either aliens or running on the sheer, unadulterated terror of wasting a single moment of their finite existence.
+
+Embrace the gloom; it’s all part of the ritual. Now, go forth and grudgingly exist!</p>
+
+            <!-- Floating shapes -->
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+    </body>
+    </html>
+    
