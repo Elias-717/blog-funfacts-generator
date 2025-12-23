@@ -123,7 +123,7 @@ if __name__ == "__main__":
     """
 
     
-blog_file_path = os.path.join(os.path.dirname(__file__), "blog.html")
+blog_file_path = os.path.join(os.path.dirname(__file__), "index.html")
 
 # Write/overwrite the HTML
 with open(blog_file_path, "w", encoding="utf-8") as f:
